@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Pertama Riki</title>
+
     <style>
         h1{
             color: rgb(5, 89, 110);
+            font-family: 'Fredoka', sans-serif;
             text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
         }
         p{
-            color: purple;
+            color: rgb(19, 6, 78);
             font-size: 25px;
+            font-weight: 400;
+            font-family: 'Fredoka', sans-serif;
         }
         body {
             text-align: center;
-            font-family: "fredoka", sans-serif;
             background: linear-gradient(
             135deg,
             #BFEFFF,
@@ -28,15 +31,44 @@
             flex-direction: column;
             align-items: center;
         }
+        #logo {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 5px solid rgb(0, 110, 255);
+        box-shadow: 0 0 20px rgba(255,255,255,0.7);
+        margin-bottom: 20px;
+        }
+        a {
+        color: rgb(2, 6, 29);
+        }
+        button {
+        font-family: 'Fredoka', sans-serif;        
+         background-color: #103f72;
+         color: white;
+         border: none;
+         padding: 12px 25px;
+         font-size: 18px;
+         border-radius: 15px;
+         cursor: pointer;
+         box-shadow:
+         0 0 10px white,
+         0 0 20px rgba(255,255,255,0.8);
+         transition: 0.3s;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1 id="judul">RcckyyuhuwWebb</h1>
+    <img
+    src="Furina.jpg"
+    id="logo">
     <p>HALOWWW</p>
-    <p id="paragraf">SELAMAT DATANG JIKELL<p>
+    <p id="paragraf">SELAMAT DATANG ZIKELL<p>
 
     <button onclick="alert()">
         PENCET AKU DONGS
@@ -45,15 +77,25 @@
         let langkah = 0;
         function alert() {
             langkah++;
+            let p = document.getElementById("paragraf");
             if(langkah == 1) {
-            document.getElementById("paragraf").innerHTML = "Gimanaa Keren Ga kell?";
+            p.innerHTML = "gimanaa keren ga kell?";
+            p.style.color = "white";
+            p.style.fontFamily = "Cinzel";
+            p.style.fontSize = "30px";
+            p.style.textShadow = "0 0 10px rgb(19, 6, 78), 0 0 20px rgb(19, 6, 78)";
+
             }
             else if(langkah == 2) {
-            document.getElementById("paragraf").innerHTML = "Bales di Chattt";
+            p.innerHTML = "bales di chattt";
+            p.style.color = "white";
+            p.style.fontSize = "28px";
+            p.style.fontFamily = "Cinzel";
+            p.style.textShadow = "0 0 10px rgb(19, 6, 78), 0 0 20px rgb(19, 6, 78)";
             }
         }
     </script>
     <p>Saya pengangguran yg sedang mencoba belajar otodidak pake ChatGPT<p>
-    <a href="https://www.google.com">Buka Google</a>
+    <a href="https://www.google.com">Google</a>
 </body>
 </html>
