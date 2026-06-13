@@ -20,6 +20,7 @@
         #paragraf {
             font-size: 25px;
             font-weight: 500;
+            margin-top: 0%;
             text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
         }
         body {
@@ -50,8 +51,9 @@
         #stiker {
             width: 100px;
             display: none;
-            margin-bottom: 15px;
-            border-radius: 15px;
+            margin-bottom: 0px;
+            border-radius: 20px;
+            width: 100px;
             box-shadow:
             0 0 10px rgb(18, 71, 185),
             0 0 20px rgba(255,255,255,0.6);
@@ -92,10 +94,10 @@
             let s = document.getElementById("stiker");
             let t = document.getElementById("paragraf");
             if(langkah == 1) {
-                t.innerHTML = "gimanaa keren ga gess?";
+                t.innerHTML = "gimanaa keren gak gess?";
                 t.style.color = "white";
                 t.style.fontFamily = "Cinzel";
-                t.style.fontSize = "30px";
+                t.style.fontSize = "20px";
                 s.style.display = "block";
                 s.src = "St1.jpg";
                 t.style.textShadow = "0 0 10px rgb(19, 6, 78), 0 0 20px rgb(19, 6, 78)";
@@ -104,7 +106,7 @@
             else if(langkah == 2) {
                 t.innerHTML = "ngga ya?";
                 t.style.color = "white";
-                t.style.fontSize = "28px";
+                t.style.fontSize = "20px";
                 t.style.fontFamily = "Cinzel";
                 s.style.display = "block";
                 s.src = "St2.jpg";
@@ -114,7 +116,7 @@
             else if(langkah == 3) {
                 t.innerHTML = "yaudah sih kan aku mah masih pemula";
                 t.style.color = "white";
-                t.style.fontSize = "28px";
+                t.style.fontSize = "20px";
                 t.style.fontFamily = "Cinzel";
                 s.style.display = "block";
                 s.src = "St3.jpg";
@@ -124,7 +126,7 @@
             else if(langkah == 4) {
                 t.innerHTML = "ampun sepuh";
                 t.style.color = "white";
-                t.style.fontSize = "28px";
+                t.style.fontSize = "20px";
                 t.style.fontFamily = "Cinzel";
                 s.style.display = "block";
                 s.src = "St6.jpg";
@@ -134,17 +136,15 @@
              else if(langkah == 5) {
                 t.innerHTML = "salam rispekk";
                 t.style.color = "white";
-                t.style.fontSize = "28px";
+                t.style.fontSize = "20px";
                 t.style.fontFamily = "Cinzel";
                 s.style.display = "block";
                 s.src = "St5.jpg";
                 t.style.textShadow = "0 0 10px rgb(19, 6, 78), 0 0 20px rgb(19, 6, 78)";
             }
 
-
-
             else {
-                t.innerHTML = "WELLKAMM TU MAI WEB GESS";
+                t.innerHTML = "WELLKAMMMM TU MAI WEB GESS";
                 t.removeAttribute("style");
                 s.style.display = "none";
                 langkah = 0;
